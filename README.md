@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ericmoore123/WeatherApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png" alt="Logo" width="80" height="80">
+    <img src="https://images.glaciermedia.ca/polopoly_fs/1.23656259.1559782911!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/environment-canada-calls-for-a-60-per-cent-chance-of-rain-showers-or-flurries-throughout-the-day-wit.jpg" alt="Logo" width="120" height="80">
   </a>
 
   <h3 align="center">React Weather App</h3>
