@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ericmoore123/WeatherApp">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">React Weather App</h3>
