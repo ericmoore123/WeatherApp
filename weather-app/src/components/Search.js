@@ -22,7 +22,7 @@ export class Search extends React.Component{
                 <input
                     type="text"
                     name="text"
-                    placeholder="Search"
+                    placeholder="city name here..."
                     value={this.state.city}
                     onChange={this.onChange}
                 />

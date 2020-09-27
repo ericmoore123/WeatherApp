@@ -2,7 +2,8 @@
     padding: none;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif,
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
 }
 
 .weather-form-container{
@@ -13,59 +14,82 @@
 
 input{
     font-size: 1.5rem;
+    border: 3px solid rgb(173, 173, 173);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem; 
     margin: 1rem;
-    border: 3px solid rgb(37, 37, 37);
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
+    background: rgb(150, 188, 201);
 }
 
-.weather-container{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    width: 50%;
-    height: 30vh;
-    min-height: 400px;
-    min-width: 550px;
-    background-color: rgb(44, 44, 44);
+  .container{
+    display: block;
+    width: 500px;
+    z-index: -1;
     margin: 0 auto;
+  }
+  
+  .icon-container{
+    position: relative;
+    transform: translateX(-1rem) translateY(-1rem);
+    background: rgb(150, 188, 201);
+    z-index: 1;
+    box-shadow: 2px 2px 4px grey;
+    max-width: 250px;
+    width: 50%;
     border-radius: 1rem;
-    padding: 1rem;
-}
-
-h2{
+  }
+  
+  img{
+    width:100%;
+    max-height: 250px;
+      max-width: 250px;
+  }
+  
+  .weather-content{
     margin: 1rem;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.weather-data-container{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    background-color: rgb(80, 80, 80);
-    align-items: center;
-    text-align: center;
-    height: 80%;
+    background: #EAE4D3;
+    z-index: 0;
+    height: 100%;
     border-radius: 1rem;
-}
-
-.icon img{
-    width: 150px;
-    height: 150px;
-}
-
-.weather-data{
+  }
+  
+  .info-below{
+    position: relative;
+    width: 40%;
+    margin: 0 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
-}
-
-.weather{
+    align-items: center;
+  }
+  
+  .loc, .time{
+    background: rgb(150, 188, 201);
+    width: 70%;
+    margin: 0.5rem 0;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .info-right{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.time{
-    margin: 2rem;
-}
-
+    height: 100%;
+    width: 200px;
+    float: right;
+    transform: translateY(-23.5rem) translateX(-0.7rem);
+  }
+  
+  .right-item{
+      color: white;
+    margin: 1rem 1rem 0 0;
+    background: rgb(150, 188, 201);
+    width: 5rem;
+    height: 5rem;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
