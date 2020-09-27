@@ -110,7 +110,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Eric Moore - ericmoore1999@outlook.com - email
+Eric Moore - ericmoore99@outlook.com - email
 
 Project Link: [https://github.com/ericmoore123/WeatherApp](https://github.com/ericmoore123/WeatherApp)
 
