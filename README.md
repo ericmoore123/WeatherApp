@@ -47,9 +47,10 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [ReactJS](https://reactjs.org/)
+* [ExpressJS](https://expressjs.com/)
+* [Axios](https://github.com/axios/axios)
+* [WeatherStack API](https://weatherstack.com/)
 
 
 
