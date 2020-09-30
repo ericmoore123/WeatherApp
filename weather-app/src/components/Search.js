@@ -8,7 +8,11 @@ export class Search extends React.Component{
 
     onSubmit = (e) => {
         e.preventDefault();
-        this.props.searchWeather(this.state.city)
+        if(this.state.city === ""){
+            alert("Please enter location before submitting!")
+        }else{
+            this.props.searchWeather(this.state.city)
+        };
     };
 
     onChange = (e) => {
