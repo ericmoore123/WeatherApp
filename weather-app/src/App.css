@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     padding: none;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
+    font-weight: 600;
     outline: none;
-  
 }
 
 /* light purp #C3BEF7 */
@@ -79,7 +81,7 @@ input{
     margin: 0.5rem 0 1rem 0;
     padding: 5px;
     border-radius: 5px;
-    color: white;
+    color: #5a51c096;
     min-height: 3rem;
   }
   
@@ -93,7 +95,8 @@ input{
   }
   
   .right-item{
-      color: white;
+      color: #5a51c096;
+      font-size: 1.3rem;
     margin: 1rem 1rem 0 0;
     background: #FFFFFF;
     width: 5rem;
