@@ -31,7 +31,13 @@ input{
     padding: 0.5rem 1rem; 
     margin: 1rem;
     background: #E5ECF4;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
+
+  input:hover{
+    transform: translateY(-5px);
+  }
 
   .container{
     display: block;
