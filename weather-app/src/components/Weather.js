@@ -11,7 +11,7 @@ class Weather extends Component {
                 </div>
             );
         }else if(cloudcover >= 0){
-            // console.log("Cloudy!")
+            console.log("Cloudy!")
         }else if(temperature > 18){
             // console.log("Hot!")
         }else{
