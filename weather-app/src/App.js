@@ -16,16 +16,34 @@ class App extends React.Component {
     this.setState({
       loading: true
     });
+    
     // Axios Call
     // const res = await axios.get(`http://api.weatherstack.com/current?access_key=${process.env.WEATHER_AUTH}&query=${location}`);
     const res = await axios.get(`http://api.weatherstack.com/current?access_key=bfb88d0821cbf07d25fcafe2a1c29918&query=${location}`);
     // console.log(res.data)
-    
-    this.setState({
-      loading: false,
-      weather: res.data.current,
-      location: res.data.location
-    });
+
+    if(res.data.current !== undefined && res.data.location !== undefined){
+      this.setState({
+        loading: false,
+        weather: res.data.current,
+        location: res.data.location
+      });
+    }else{
+      alert("Location Data Not Available!");
+      this.setState({
+        loading: false,
+        weather: {},
+        location: {}
+      });
+    }
+
+    console.log(typeof res.data.weather)
+
+    // this.setState({
+    //   loading: false,
+    //   weather: res.data.current,
+    //   location: res.data.location
+    // });
     console.log(this.state.weather)
     // console.log(this.state.location)
   }
