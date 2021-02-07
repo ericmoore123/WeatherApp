@@ -4,20 +4,11 @@ class Weather extends Component {
 
     render(props) {
         const {
-            cloudcover,
             feelslike,
             humidity,
-            is_day,
-            observation_time,
-            precip,
+            // precip,
             pressure,
             temperature,
-            uv_index,
-            visibility,
-            weather_code,
-            weather_descriptions,
-            weather_icons,
-            wind_degree,
             wind_dir,
             wind_speed,
         } = this.props.weather;
@@ -25,9 +16,6 @@ class Weather extends Component {
         const {
             name,
             country,
-            region,
-            lat,
-            lon,
             localtime,
         } = this.props.location;
 
