@@ -19,7 +19,6 @@ class App extends React.Component {
     
     // Axios Call
     const res = await axios.get(`http://api.weatherstack.com/current?access_key=bfb88d0821cbf07d25fcafe2a1c29918&query=${location}`);
-    // console.log(res.data)
 
     if(res.data.current !== undefined && res.data.location !== undefined){
       this.setState({
@@ -30,7 +29,7 @@ class App extends React.Component {
     }else{
       alert("Location Data Not Available!");
       this.setState( function(prevState) {
-        console.log("Prevstate:" + prevState)
+        // console.log("Prevstate:" + prevState)
         return{
           loading: prevState.loading,
           weather: prevState.weather,
@@ -38,16 +37,6 @@ class App extends React.Component {
         }
       });
     }
-
-    console.log(typeof res.data.weather)
-
-    // this.setState({
-    //   loading: false,
-    //   weather: res.data.current,
-    //   location: res.data.location
-    // });
-    console.log(this.state.weather)
-    // console.log(this.state.location)
   }
 
   render(){ 
