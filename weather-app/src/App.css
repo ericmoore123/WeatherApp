@@ -31,8 +31,11 @@ input{
     padding: 0.5rem 1rem; 
     margin: 1rem;
     background: #E5ECF4;
-    cursor: pointer;
     transition: 0.5s ease-in-out;
+}
+
+.submit{
+  cursor: pointer;
 }
 
   input:hover{
@@ -88,7 +91,7 @@ input{
     padding: 5px;
     border-radius: 5px;
     color: #5a51c096;
-    min-height: 3rem;
+    min-height: 4rem;
   }
   
   .info-right{
@@ -115,3 +118,36 @@ input{
     border-radius: 3px;
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.2);
   }
+
+  .time > .left-labels{
+    left: 33%;
+  }
+
+  .left-labels{
+    background-color: #E5ECF4;
+    font-size: 1rem;
+    padding: 2px;
+    position: relative;
+    top: -15px;
+    left: 22.5%;
+    border-radius: 5px;
+    color: black;
+    cursor: default;
+    white-space: nowrap;
+
+  }
+
+  .labels{
+    background-color: #E5ECF4;
+    font-size: 1rem;
+    padding: 2px;
+    position: relative;
+    top: -40px;
+    border-radius: 5px;
+    color: black;
+    cursor: default;
+    white-space: nowrap;
+  }
+
+
+

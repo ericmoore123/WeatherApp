@@ -33,6 +33,7 @@ export class Search extends React.Component{
                 <input
                     type="submit"
                     value="Search"
+                    className="submit"
                 />
                 </form>
             </div>

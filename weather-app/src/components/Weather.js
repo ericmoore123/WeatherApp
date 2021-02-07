@@ -1,23 +1,6 @@
 import React, { Component } from 'react';
 
 class Weather extends Component {
-    checkIcon = (temperature, precip, cloudcover, name, country, region) => {
-        if(precip >= 0){
-            // console.log("Raining!")
-            return (
-                <div className="icon">
-                    <img alt="sun icon" src="https://image.flaticon.com/icons/png/512/169/169367.png" />
-                    <h2>{name}, {region}, {country}</h2>
-                </div>
-            );
-        }else if(cloudcover >= 0){
-            console.log("Cloudy!")
-        }else if(temperature > 18){
-            // console.log("Hot!")
-        }else{
-
-        }
-    }
 
     render(props) {
         const {
@@ -49,22 +32,46 @@ class Weather extends Component {
         } = this.props.location;
 
         return (
-            <div class="container">
-                <div class="weather-content">
-                    <div class="icon-container">
+            <div className="container">
+                <div className="weather-content">
+                    <div className="icon-container">
                     <img src="https://images.squarespace-cdn.com/content/v1/5572b7b4e4b0a20071d407d4/1487090874274-FH2ZNWOTRU90UAF5TA2B/ke17ZwdGBToddI8pDm48kCMWMBFcqQftRz-JqZZoIB5Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVFI99ncPZu898P4WAmVYNBp8mgB1qWbp5RirnU_Xvq-XCb8BodarTVrzIWCp72ioWw/Weather+Targeting" alt="current weather icon" />
                 </div>
-                    <div class="info-below">
-                        <div class="loc">{name}  {region} {country}</div>
-                        <div class="time">{localtime}</div>
+                    <div className="info-below">
+                        <div className="loc">
+                            <span className="left-labels">Location</span>
+                            <p>{name}  {region} {country}</p>
+                        </div>
+                        <div className="time">
+                            <span className="left-labels">Time</span>
+                            <p>{localtime}</p>
+                        </div>
                     </div>
-                    <div class="info-right">
-                        <div class="right-item">{temperature}</div>
-                        <div class="right-item">{feelslike}</div>
-                        <div class="right-item">{humidity}</div>
-                        <div class="right-item">{pressure}</div>
-                        <div class="right-item">{wind_dir}</div>
-                        <div class="right-item">{wind_speed}</div>
+                    <div className="info-right">
+                        <div className="right-item">
+                            <span className="labels">Temperature</span>
+                            <p>{temperature}</p>
+                        </div>
+                        <div className="right-item">
+                            <span className="labels">Feels Like</span>
+                            <p>{feelslike}</p>
+                        </div>
+                        <div className="right-item">
+                            <span className="labels">Humidity</span>
+                            <p>{humidity}</p>
+                        </div>
+                        <div className="right-item">
+                            <span className="labels">Pressure</span>
+                            <p>{pressure}</p>
+                        </div>
+                        <div className="right-item">
+                            <span className="labels">Wind Direction</span>
+                            {wind_dir}
+                        </div>
+                        <div className="right-item">
+                            <span className="labels">Wind Speed</span>
+                            <p>{wind_speed}</p>
+                        </div>
                     </div>
                 </div>
             </div>
