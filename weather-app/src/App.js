@@ -18,7 +18,6 @@ class App extends React.Component {
     });
     
     // Axios Call
-    // const res = await axios.get(`http://api.weatherstack.com/current?access_key=${process.env.WEATHER_AUTH}&query=${location}`);
     const res = await axios.get(`http://api.weatherstack.com/current?access_key=bfb88d0821cbf07d25fcafe2a1c29918&query=${location}`);
     // console.log(res.data)
 
@@ -30,10 +29,13 @@ class App extends React.Component {
       });
     }else{
       alert("Location Data Not Available!");
-      this.setState({
-        loading: false,
-        weather: {},
-        location: {}
+      this.setState( function(prevState) {
+        console.log("Prevstate:" + prevState)
+        return{
+          loading: prevState.loading,
+          weather: prevState.weather,
+          location: prevState.location
+        }
       });
     }
 
