@@ -28,7 +28,7 @@ class Weather extends Component {
                     <div className="info-below">
                         <div className="loc">
                             <span className="left-labels">Location</span>
-                            <p className="weather-data">{name} {country}</p>
+                            <p className="">{name} {country}</p>
                         </div>
                         <div className="time">
                             <span className="left-labels">Date & Time</span>
@@ -64,8 +64,8 @@ class Weather extends Component {
                 </div>
             </div>
         )
-    }
-}
+    };
+};
 
 export default Weather;
 
