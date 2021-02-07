@@ -40,37 +40,37 @@ class Weather extends Component {
                     <div className="info-below">
                         <div className="loc">
                             <span className="left-labels">Location</span>
-                            <p>{name}  {region} {country}</p>
+                            <p className="weather-data">{name} {country}</p>
                         </div>
                         <div className="time">
-                            <span className="left-labels">Time</span>
-                            <p>{localtime}</p>
+                            <span className="left-labels">Date & Time</span>
+                            <p className="weather-data">{localtime}</p>
                         </div>
                     </div>
                     <div className="info-right">
                         <div className="right-item">
                             <span className="labels">Temperature</span>
-                            <p>{temperature}</p>
+                            <p className="weather-data">{temperature}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Feels Like</span>
-                            <p>{feelslike}</p>
+                            <p className="weather-data">{feelslike}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Humidity</span>
-                            <p>{humidity}</p>
+                            <p className="weather-data">{humidity}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Pressure</span>
-                            <p>{pressure}</p>
+                            <p className="weather-data">{pressure}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Wind Direction</span>
-                            {wind_dir}
+                            <p className="weather-data">{wind_dir}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Wind Speed</span>
-                            <p>{wind_speed}</p>
+                            <p className="weather-data">{wind_speed}</p>
                         </div>
                     </div>
                 </div>

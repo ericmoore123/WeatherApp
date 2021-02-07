@@ -68,7 +68,7 @@ input{
   
   .weather-content{
     margin: 1rem;
-    background: #c3bef7;
+    background: #709cd4;
     z-index: 0;
     height: 100%;
     border-radius: 1rem;
@@ -90,8 +90,9 @@ input{
     margin: 0.5rem 0 1rem 0;
     padding: 5px;
     border-radius: 5px;
-    color: #5a51c096;
+    color: #709cd4;
     min-height: 4rem;
+    font-size: 1rem;
   }
   
   .info-right{
@@ -104,7 +105,7 @@ input{
   }
   
   .right-item{
-      color: #5a51c096;
+      color: #709cd4;;
       font-size: 1.3rem;
     margin: 1rem 1rem 0 0;
     background: #FFFFFF;
@@ -120,7 +121,7 @@ input{
   }
 
   .time > .left-labels{
-    left: 33%;
+    left: 15%;
   }
 
   .left-labels{
@@ -134,7 +135,6 @@ input{
     color: black;
     cursor: default;
     white-space: nowrap;
-
   }
 
   .labels{
@@ -147,6 +147,10 @@ input{
     color: black;
     cursor: default;
     white-space: nowrap;
+  }
+
+  .weather-data{
+    position: absolute;
   }
 
 
