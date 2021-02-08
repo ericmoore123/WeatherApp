@@ -19,7 +19,7 @@ class App extends React.Component {
     
     // Axios Call
     const res = await axios.get(`http://api.weatherstack.com/current?access_key=bfb88d0821cbf07d25fcafe2a1c29918&query=${location}`);
-
+    
     if(res.data.current !== undefined && res.data.location !== undefined){
       this.setState({
         loading: false,
