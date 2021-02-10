@@ -14,7 +14,7 @@
     <a href="https://github.com/ericmoore123/WeatherApp"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo <strong>[Not Available as of Sept. 2020]</strong></a>
+    <a href="https://weather-app-2077.netlify.app/">View Live Version<strong></strong></a>
   </p>
 </p>
 
