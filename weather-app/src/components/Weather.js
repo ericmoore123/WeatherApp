@@ -4,13 +4,13 @@ class Weather extends Component {
 
     render(props) {
         const {
-            feelslike,
+            feelslike_f,
             humidity,
             // precip,
-            pressure,
-            temperature,
+            pressure_in,
+            temp_f,
             wind_dir,
-            wind_speed,
+            wind_kph,
         } = this.props.weather;
 
         const {
@@ -38,11 +38,11 @@ class Weather extends Component {
                     <div className="info-right">
                         <div className="right-item">
                             <span className="labels">Temperature</span>
-                            <p className="weather-data">{temperature}</p>
+                            <p className="weather-data">{temp_f}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Feels Like</span>
-                            <p className="weather-data">{feelslike}</p>
+                            <p className="weather-data">{feelslike_f}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Humidity</span>
@@ -50,7 +50,7 @@ class Weather extends Component {
                         </div>
                         <div className="right-item">
                             <span className="labels">Pressure</span>
-                            <p className="weather-data">{pressure}</p>
+                            <p className="weather-data">{pressure_in}</p>
                         </div>
                         <div className="right-item">
                             <span className="labels">Wind Direction</span>
@@ -58,7 +58,7 @@ class Weather extends Component {
                         </div>
                         <div className="right-item">
                             <span className="labels">Wind Speed</span>
-                            <p className="weather-data">{wind_speed}</p>
+                            <p className="weather-data">{wind_kph} </p>
                         </div>
                     </div>
                 </div>

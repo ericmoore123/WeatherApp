@@ -12,31 +12,30 @@ class App extends React.Component {
     loading: false
   };
 
+  
   getWeather = async (location) => {
     this.setState({
       loading: true
     });
-    
-    // Axios Call
-    const res = await axios.get(`https://api.weatherstack.com/current?access_key=bfb88d0821cbf07d25fcafe2a1c29918&query=${location}`);
 
-    if(res.data.current !== undefined && res.data.location !== undefined){
+    // Axios Call
+    await axios.get(`https://api.weatherapi.com/v1/current.json?key=6931aa59f8694c7e856230530211803&q=${location}&aqi=yes`)
+    .then((res) => {
       this.setState({
-        loading: false,
-        weather: res.data.current,
-        location: res.data.location
-      });
-    }else{
+            loading: false,
+            weather: res.data.current,
+            location: res.data.location
+          });
+    }).catch((error) => {
       alert("Location Data Not Available!");
       this.setState( function(prevState) {
-        // console.log("Prevstate:" + prevState)
         return{
           loading: prevState.loading,
           weather: prevState.weather,
           location: prevState.location
         }
       });
-    }
+    })    
   }
 
   render(){ 
