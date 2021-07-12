@@ -11,8 +11,6 @@
   <p align="center">
     Simple weather application which uses React, ExpressJS, axios and a weather API (links below) to fetch and display data on a comprehensive UI based on users inputted location.  
     <br />
-    <a href="https://github.com/ericmoore123/WeatherApp"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://weather-app-2077.netlify.app">View Live Version<strong></strong></a>
   </p>
